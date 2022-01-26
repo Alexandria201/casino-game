@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <style>
+  #bet-form {display: none}
+  #bet-result {display: none}
+  #bet-point {display: none}
+</style>
+<main>
+  <header>
+    Casino
+  </header>
+  <!--   Section for betting -->
+  <section id="bet-form">
+    <h1>Your Balance: <strong>$<output id="balance1">500</output></strong></h1>
+    <form>
+      <div>
+        <input type="number" placeholder="Place a bet" id="bet">          
+      </div>
+      <div>
+        <button type="button" onclick="rollDice(); resultBlock();DOMonRoll();calcWinLoss();">Roll the dice</button>
+      </div>
+    </form>    
+  </section>
+  <!--   Section for result -->
+  <section id="bet-result">
+    <h1>Your Balance: <strong>$<output id="balance2"></output> </strong></h1>
+    <p>On dice: <strong> <output type="number" id="dice1result"></output></strong> , <strong> <output id="dice2result"></output></strong></p>
+    <p><output id="winLose"></output> </p>
+    <form>      
+        <button id="resultButton"type="button" onclick="betBlock();">Play Again!</button>
+    </form>    
+  </section>
+  <!-- Out of money section -->
+  <section id="broke">
+    <h1>Your Balance: <strong>$<output id="balance2">0</output> </strong></h1>
+    <p> <strong>You are out of money!</strong></p>
+    <p><output id="winLose"></output> </p>
+    <!-- <form>      
+        <button id="resultButton"type="button" onclick="brokeBlock();">Game Over</button>
+    </form>     -->
+    <form>      
+        <button id="newGame"type="button" onclick="window.location.reload()">Start New Game</button>
+    </form>  
+  </section>
+  <footer>
+    <img class="img" src="https://www.freeiconspng.com/thumbs/dice-png/dice-png-transparent-2012-at-1200-674-in-dice-15.png" alt="">
+  </footer>
+</main>
+<script src="./file.js"></script>
+</body>
+</html>

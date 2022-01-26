@@ -1,0 +1,20 @@
+{
+  "name": "game-of-dice",
+  "version": "1.0.0",
+  "main": "file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandria201/Game-of-dice.git"
+  },
+  "author": "sasha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandria201/Game-of-dice/issues"
+  },
+  "homepage": "https://github.com/Alexandria201/Game-of-dice#readme",
+  "keywords": [],
+  "description": ""
+}
