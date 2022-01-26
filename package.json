@@ -1,0 +1,19 @@
+{
+  "name": "casino-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandria201/casino-game.git"
+  },
+  "author": "Sasha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandria201/casino-game/issues"
+  },
+  "homepage": "https://github.com/Alexandria201/casino-game#readme"
+}
